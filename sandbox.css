@@ -1,0 +1,56 @@
+.sandbox-content {
+    text-align: center;
+    padding: 2rem;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .button-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .button-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(45deg, #2563eb, #7c3aed, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: gradientShift 5s ease infinite;
+}
+
+/* Add these styles for the back button */
+.back-button {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: opacity 0.3s ease;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #2563eb, #7c3aed, #ec4899);
+    background-size: 200% 200%;
+    animation: gradientShift 5s ease infinite;
+}
+
+.back-button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+} 
